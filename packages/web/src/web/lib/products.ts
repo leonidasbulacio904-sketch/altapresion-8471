@@ -1,0 +1,198 @@
+export type Product = {
+  id: string;
+  name: string;
+  category: "Cortas" | "Sureñas";
+  image: string;
+  images: string[];
+  color: string;
+  description: string;
+};
+
+const photo = (n: number) => `catalogo/gorra-${String(n).padStart(2, "0")}`;
+const model = (
+  id: number,
+  name: string,
+  category: Product["category"],
+  photos: number[],
+  color: string,
+  description: string,
+): Product => ({
+  id: `LN-${String(id).padStart(2, "0")}`,
+  name,
+  category,
+  image: photo(photos[0]),
+  images: photos.map(photo),
+  color,
+  description,
+});
+
+export const products: Product[] = [
+  model(
+    1,
+    "Camuflada gris · visera negra",
+    "Cortas",
+    [1],
+    "#697478",
+    "Gorra corta con paneles camuflados en gris y visera negra.",
+  ),
+  model(
+    2,
+    "Camuflada gris · visera estampada",
+    "Cortas",
+    [24, 2],
+    "#747d7e",
+    "Gorra corta con franja oscura y visera camuflada en tonos grises. Vista lateral y frontal del mismo modelo.",
+  ),
+  model(
+    3,
+    "Sureña roja y negra",
+    "Sureñas",
+    [3, 5],
+    "#ab233f",
+    "Gorra sureña de formato largo, en rojo y negro. Mirá la vista frontal y la lateral con el cierre abierto.",
+  ),
+  model(
+    4,
+    "Sureña camuflada",
+    "Sureñas",
+    [4],
+    "#979774",
+    "Gorra sureña de formato largo con estampado camuflado y parte superior oscura.",
+  ),
+  model(
+    5,
+    "Camuflada tierra y negra",
+    "Cortas",
+    [6],
+    "#8f8c6c",
+    "Gorra corta con franja negra y paneles camuflados en tonos tierra.",
+  ),
+  model(
+    6,
+    "Arena y camuflado",
+    "Cortas",
+    [7],
+    "#a39464",
+    "Gorra corta en tono arena con detalles camuflados en la copa y la visera.",
+  ),
+  model(
+    7,
+    "Arena atigrada",
+    "Cortas",
+    [8],
+    "#b09b65",
+    "Gorra corta en tono arena, con estampado atigrado en la copa y la visera.",
+  ),
+  model(
+    8,
+    "Camuflada verde y marrón",
+    "Cortas",
+    [9],
+    "#576444",
+    "Gorra corta completamente estampada en camuflado verde y marrón.",
+  ),
+  model(
+    9,
+    "Camuflada arena · visera negra",
+    "Cortas",
+    [10],
+    "#a5a075",
+    "Gorra corta con franja camuflada en tonos arena y visera negra.",
+  ),
+  model(
+    10,
+    "Tropical azul",
+    "Cortas",
+    [11],
+    "#52b4c0",
+    "Gorra corta con estampado de hojas y flores en tonos azules y turquesa.",
+  ),
+  model(
+    11,
+    "Manchas blanco y negro",
+    "Cortas",
+    [12],
+    "#c6c6c3",
+    "Gorra corta con estampado de manchas en blanco y negro.",
+  ),
+  model(
+    12,
+    "Tropical verde",
+    "Cortas",
+    [13],
+    "#409557",
+    "Gorra corta con estampado de hojas y flores en tonos verdes.",
+  ),
+  model(
+    13,
+    "Camuflada combinada verde y gris",
+    "Cortas",
+    [14],
+    "#697c68",
+    "Gorra corta que combina camuflado verde con una franja camuflada gris.",
+  ),
+  model(
+    14,
+    "Camuflada verde · franja negra",
+    "Cortas",
+    [19, 15],
+    "#526e40",
+    "Gorra corta con paneles y visera camuflados en verde, y franja central negra. Vista lateral y frontal del mismo modelo.",
+  ),
+  model(
+    15,
+    "Roja estampada",
+    "Cortas",
+    [16],
+    "#b53428",
+    "Gorra corta roja con pequeños motivos estampados.",
+  ),
+  model(
+    16,
+    "Camuflada verde oscura",
+    "Cortas",
+    [17],
+    "#3b5142",
+    "Gorra corta completamente camuflada en tonos verdes oscuros.",
+  ),
+  model(
+    17,
+    "Azul con anclas",
+    "Cortas",
+    [18],
+    "#29314f",
+    "Gorra corta azul oscuro con estampado de anclas en distintos colores.",
+  ),
+  model(
+    18,
+    "Roja y camuflada",
+    "Cortas",
+    [21],
+    "#b52d42",
+    "Gorra corta con franja y panel rojo, combinados con visera y paneles camuflados.",
+  ),
+  model(
+    19,
+    "Leopardo y negra",
+    "Cortas",
+    [22],
+    "#a39377",
+    "Gorra corta con copa de estampado leopardo, franja y visera negras.",
+  ),
+  model(
+    20,
+    "Reptil y oscura",
+    "Cortas",
+    [23],
+    "#8e713f",
+    "Gorra corta con estampado tipo reptil en copa y visera, combinado con franja oscura.",
+  ),
+  model(
+    21,
+    "Camuflada gris completa",
+    "Cortas",
+    [25],
+    "#747982",
+    "Gorra corta completamente camuflada en tonos grises, con el estampado en copa, franja y visera.",
+  ),
+];

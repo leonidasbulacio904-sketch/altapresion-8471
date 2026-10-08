@@ -1,0 +1,13 @@
+ # Tarea
+- Plan aprobado: catálogo oscuro industrial, muestras, filtros, tallas y pedido por WhatsApp.
+- Contactos: 3413618729 y 3416668425; +54 9 Argentina asumido.
+- Frontend implementado sin API nueva ni base de datos. Imágenes y fuentes locales.
+- Build y lint correctos. Chrome probado a 1440 y 390 px: sin errores JS ni desbordamiento móvil; filtros, talles, cantidades, quitar producto, guía, menú y Escape correctos.
+- Enlaces WhatsApp verificados con ambos teléfonos y mensaje con selección, talle, cantidad y nota. No se enviaron mensajes ni se verificó que los números estén registrados en WhatsApp.
+- Dev server activo en tmux alta-web, puerto 4200. Listo para entrega.
+- Marca corregida a Alta Presión L Y N en UI, metadatos y WhatsApp.
+- 24 fotos recibidas: una repetida de anclas, 23 vistas únicas agrupadas en 20 modelos (18 cortas, 2 sureñas). Galerías dobles: sureña roja, camuflada gris con visera estampada, camuflada verde con franja negra. Otros diseños separados por combinaciones diferentes.
+- Fotos reales copiadas y optimizadas sin eliminar marcas de agua. No se muestran productos de muestra. Nombres descriptivos y referencias LN internos; no se inventan precios ni stock.
+- Nueva verificación: lint y build correctos; Chrome escritorio/móvil, 20 tarjetas, filtros 18/2, galerías, miniaturas, ampliación, fotos y mensaje de pedido correctos, sin errores JS.
+- Próximo: precios, medidas/materiales y nombres oficiales si el usuario los proporciona.
+- Últimas dos fotos: primera idéntica píxel a píxel a la foto 24 ya incluida en LN-02; segunda agregada como Camuflada gris completa LN-21, foto 25. Total actual 21 modelos: 19 cortas y 2 sureñas. Build, lint y prueba móvil de foto/pedido/galería correctos.
