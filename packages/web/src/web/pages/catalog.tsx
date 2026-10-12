@@ -121,7 +121,7 @@ export default function Catalog() {
         <section id="inicio" className="hero wrap">
           <div className="hero-copy">
             <div className="eyebrow">
-              <span className="orange-square" /> HECHAS PARA TU OFICIO
+              <span className="orange-square" /> ROSARIO · SANTA FE · ARGENTINA
             </div>
             <h1>
               EL OFICIO
@@ -325,6 +325,8 @@ export default function Catalog() {
                 <span>LA PRÓXIMA?</span>
               </h2>
               <p>
+                Somos de Rosario, Santa Fe, Argentina.
+                <br />
                 Consultá talles, modelos y precios.
                 <br />
                 Elegí cualquiera de nuestros dos contactos oficiales.
@@ -360,7 +362,7 @@ export default function Catalog() {
           Volver arriba <ArrowUpRight size={15} />
         </a>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Alta Presión L Y N</span>
+          <span>© {new Date().getFullYear()} Alta Presión L Y N · Rosario, Santa Fe, Argentina</span>
           <span>Las gorritas no reemplazan los elementos de protección personal.</span>
         </div>
       </footer>
@@ -444,6 +446,12 @@ export default function Catalog() {
               )}
               <h2>{selected.name}</h2>
               <p>{selected.description}</p>
+              {selected.photoSizes && (
+                <p className="detail-disclaimer">
+                  Talle indicado en la foto: {selected.photoSizes.join(", ")}. Disponibilidad a
+                  consultar.
+                </p>
+              )}
               <p className="detail-disclaimer">
                 Foto de nuestro modelo. Materiales, talles, precio y disponibilidad a confirmar por
                 WhatsApp.
@@ -451,7 +459,7 @@ export default function Catalog() {
               <label className="field">
                 Talle a consultar
                 <select value={size} onChange={(e) => setSize(e.target.value)}>
-                  {["A confirmar", "S", "M", "L", "XL"].map((s) => (
+                  {["A confirmar", ...(selected.photoSizes ?? ["S", "M", "L", "XL"])].map((s) => (
                     <option key={s}>{s}</option>
                   ))}
                 </select>

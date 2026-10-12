@@ -10,6 +10,7 @@ Catálogo de gorritas de soldador, industrial oscuro, sin pagos ni cuentas.
 - Fotografías reales aportadas por el usuario, conservando sus marcas de agua. Nombres descriptivos provisionales y referencias internas LN. Precios y disponibilidad por consulta, sin inventar stock.
 - Categorías Cortas y Sureñas. Galería por producto con miniaturas, anterior/siguiente y ampliación. Agrupar solo vistas del mismo diseño identificables; sureña roja frontal y lateral son un mismo producto.
 - Selección de talla y cantidad, lista de pedido y elección entre dos contactos WhatsApp; prefijo argentino +54 9 asumido y visible.
+- Talles numéricos solo cuando se leen en las fotos: 57 en LN-31 y 59 en LN-32. Mostrar su origen y disponibilidad a consultar; sin equivalencias inventadas. Selección inicial «A confirmar».
 - Responsive: navegación compacta y catálogo de una columna en móvil. Modales accesibles con Escape, foco inicial y restaurado.
 - Movimiento discreto de entrada y hover, respeto a prefers-reduced-motion.
 - Página en src/web/pages/catalog.tsx, index.tsx solo reexporta. Estado React local; sin API nueva ni tablas.
